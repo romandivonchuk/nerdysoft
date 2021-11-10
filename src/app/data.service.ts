@@ -10,8 +10,6 @@ export class DataService {
   data: Announcement[] = DATA
   constructor() { }
 
-  _edit: Announcement | undefined
-
   getData() {
     return this.data
   }
