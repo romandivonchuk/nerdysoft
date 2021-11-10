@@ -1,0 +1,15 @@
+.announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  text-decoration: none;
+  padding: 5px;
+  background: black;
+  color: white;
+}

@@ -1,0 +1,11 @@
+
+<div class="announcement">
+  <h2>{{announcement.title}}</h2>
+  <p>{{announcement.description}}</p>
+  <hr>
+  <p>{{announcement.date | date: 'dd/MM/yyyy'}}</p>
+  <button (click)="delete(announcement.id)">delete</button>
+  <button (click)="edit(announcement.id)">edit</button>
+   <a class="button" routerLink="announcement/{{announcement.id}}" >Details</a>
+</div>
+

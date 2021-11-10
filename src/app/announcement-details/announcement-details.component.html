@@ -1,0 +1,18 @@
+
+<div class="wrapper">
+  <div class="announcement">
+    <h2>{{announcement.title}}</h2>
+    <p>{{announcement.description}}</p>
+    <hr>
+    <p>{{announcement.date | date: 'dd/MM/yyyy'}}</p>
+  </div>
+  <h1>top 3 similar</h1>
+  <div *ngFor="let item of top" class="announcement">
+    <h2>{{item.title}}</h2>
+    <p>{{item.description}}</p>
+    <hr>
+    <button (click)="changeAnnoun(item.id)">more</button>
+    <p>{{item.date | date: 'dd/MM/yyyy'}}</p>
+  </div>
+</div>
+

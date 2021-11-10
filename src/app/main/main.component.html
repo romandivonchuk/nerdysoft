@@ -1,0 +1,12 @@
+<app-search (searchEvent)=search($event)></app-search>
+
+<a class="button" routerLink="/addAnnouncement">Add Announcement</a>
+
+
+<div class="announcement" *ngFor="let announcement of announcements">
+
+  <app-announcement [announcement]="announcement" (deleteEvent)="delete($event)" (editEvent)="edit($event)"></app-announcement>
+</div>
+
+
+
