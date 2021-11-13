@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+  <fieldset>
+    <legend>app</legend>
+    <div>
+      <label for="login"></label>
+      <input type="text" id="login" formControlName="log">
+    </div>
+    <div>
+      <label for="pass"></label>
+      <input type="text" id="pass" formControlName="pass">
+    </div>
+  </fieldset>
+  <button (click)="show()">Click</button>
+</form>

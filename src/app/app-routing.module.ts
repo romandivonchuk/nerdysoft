@@ -1,3 +1,4 @@
+import { FormsComponent } from './forms/forms.component';
 import { AnnouncementComponent } from './announcement/announcement.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'announcement/:id', component: AnnouncementDetailsComponent },
   { path: 'addAnnouncement', component: AddAnnouncementComponent },
   { path: 'edit/:id', component: AddAnnouncementComponent },
+  { path: 'form', component: FormsComponent },
 ];
 
 @NgModule({

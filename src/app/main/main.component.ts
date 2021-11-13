@@ -1,7 +1,7 @@
 import { Announcement } from './../interfaces';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -29,10 +29,7 @@ export class MainComponent implements OnInit {
 
   edit(id: number) {
     const flag = window.confirm('do you want EDIT?')
-
     flag && this.router.navigate(['edit', id]);
-    debugger;
-
   }
 
   search(text:string) {

@@ -10,6 +10,7 @@ import { AddAnnouncementComponent } from './add-announcement/add-announcement.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { AnnouncementDetailsComponent } from './announcement-details/announcement-details.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AnnouncementDetailsComponent } from './announcement-details/announcemen
     MainComponent,
     AddAnnouncementComponent,
     AnnouncementDetailsComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,

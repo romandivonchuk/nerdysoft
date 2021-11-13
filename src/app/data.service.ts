@@ -15,11 +15,15 @@ export class DataService {
   }
 
   addData(item: any) {
-    if (!item.id) {
-      item.id = this.data.length+40
-    }
+    item.id = this.data.length+40
     item.data = new Date()
     this.data = [item, ...this.data]
+  }
+
+  editData(data: any) {
+    const index = this.data.findIndex(item => item.id === data.id)
+    debugger;
+    this.data[index] = data
   }
 
   delete(id:number) {
